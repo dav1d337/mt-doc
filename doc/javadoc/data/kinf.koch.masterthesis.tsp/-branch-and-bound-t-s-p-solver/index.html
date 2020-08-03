@@ -1,0 +1,80 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>BranchAndBoundTSPSolver - data</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">data</a>&nbsp;/&nbsp;<a href="../index.html">kinf.koch.masterthesis.tsp</a>&nbsp;/&nbsp;<a href="./index.html">BranchAndBoundTSPSolver</a><br/>
+<br/>
+<h1>BranchAndBoundTSPSolver</h1>
+(JVM) <code><span class="identifier">@MapScope</span> <span class="keyword">class </span><span class="identifier">BranchAndBoundTSPSolver</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-t-s-p-solver.html"><span class="identifier">TSPSolver</span></a></code> <a href="https://github.com/cy6erGn0m/vertx3-lang-kotlin/blob/master/src/main/kotlin/app/src/main/java/kinf/koch/masterthesis/tsp/BranchAndBoundTSPSolver.kt#L12">(source)</a>
+<p>Solves the Traveling Salesman Problem with a banch-and-bound-approach.
+By branching the problem in different subproblems and bounding the solutions, it will find the hamilton cycle inside an adjacency matrix in O(n^3).</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Solves the Traveling Salesman Problem with a banch-and-bound-approach.
+By branching the problem in different subproblems and bounding the solutions, it will find the hamilton cycle inside an adjacency matrix in O(n^3).</p>
+<code><span class="identifier">BranchAndBoundTSPSolver</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+(JVM) 
+<h4><a href="minimum-weight.html">minimumWeight</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">minimumWeight</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-n.html">N</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">N</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="route.html">route</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">route</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html"><span class="identifier">IntArray</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="visited.html">visited</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">visited</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html"><span class="identifier">BooleanArray</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+(JVM) 
+<h4><a href="solve.html">solve</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">solve</span><span class="symbol">(</span><span class="identifier" id="kinf.koch.masterthesis.tsp.BranchAndBoundTSPSolver$solve(kotlin.Array((kotlin.DoubleArray)), kotlin.Int)/adj">adj</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html"><span class="identifier">DoubleArray</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="kinf.koch.masterthesis.tsp.BranchAndBoundTSPSolver$solve(kotlin.Array((kotlin.DoubleArray)), kotlin.Int)/n">n</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

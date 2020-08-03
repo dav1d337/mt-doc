@@ -1,0 +1,358 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SqlitePoiRepository - data</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">data</a>&nbsp;/&nbsp;<a href="../index.html">kinf.koch.masterthesis.model.pois</a>&nbsp;/&nbsp;<a href="./index.html">SqlitePoiRepository</a><br/>
+<br/>
+<h1>SqlitePoiRepository</h1>
+(JVM) <code><span class="identifier">@MapScope</span> <span class="keyword">class </span><span class="identifier">SqlitePoiRepository</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-poi-repository/index.html"><span class="identifier">PoiRepository</span></a></code> <a href="https://github.com/cy6erGn0m/vertx3-lang-kotlin/blob/master/src/main/kotlin/app/src/main/java/kinf/koch/masterthesis/model/pois/SqlitePoiRepository.kt#L10">(source)</a>
+<p>Reads the values from a given MMV SQLite file and saves them into the <a href="../-poi-database/index.html">PoiDatabase</a></p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Reads the values from a given MMV SQLite file and saves them into the <a href="../-poi-database/index.html">PoiDatabase</a></p>
+<code><span class="identifier">SqlitePoiRepository</span><span class="symbol">(</span><span class="identifier" id="kinf.koch.masterthesis.model.pois.SqlitePoiRepository$<init>(kinf.koch.masterthesis.model.pois.PoiDatabase)/sessionProvider">sessionProvider</span><span class="symbol">:</span>&nbsp;<a href="../-poi-database/index.html"><span class="identifier">PoiDatabase</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+(JVM) 
+<h4><a href="pois.html">pois</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">pois</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-poi/index.html"><span class="identifier">Poi</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-a-t-t-r-i-b-u-t-e_-g-r-o-u-p_-o-r-d-e-r_-i-n-d-e-x.html">ATTRIBUTE_GROUP_ORDER_INDEX</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">ATTRIBUTE_GROUP_ORDER_INDEX</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-a-t-t-r-i-b-u-t-e_-i-d.html">ATTRIBUTE_ID</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">ATTRIBUTE_ID</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-a-t-t-r-i-b-u-t-e_-n-a-m-e.html">ATTRIBUTE_NAME</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">ATTRIBUTE_NAME</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-a-t-t-r-i-b-u-t-e_-o-r-d-e-r_-i-n-d-e-x.html">ATTRIBUTE_ORDER_INDEX</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">ATTRIBUTE_ORDER_INDEX</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-a-t-t-r-i-b-u-t-e_-t-a-b-l-e.html">ATTRIBUTE_TABLE</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">ATTRIBUTE_TABLE</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-a-t-t-r-i-b-u-t-e_-u-n-i-q-u-e_-i-d.html">ATTRIBUTE_UNIQUE_ID</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">ATTRIBUTE_UNIQUE_ID</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-c-a-t-e-g-o-r-y_-i-c-o-n_-n-a-m-e.html">CATEGORY_ICON_NAME</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">CATEGORY_ICON_NAME</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-c-a-t-e-g-o-r-y_-i-d.html">CATEGORY_ID</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">CATEGORY_ID</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-c-a-t-e-g-o-r-y_-n-a-m-e.html">CATEGORY_NAME</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">CATEGORY_NAME</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-c-a-t-e-g-o-r-y_-p-a-r-e-n-t_-i-d.html">CATEGORY_PARENT_ID</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">CATEGORY_PARENT_ID</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-c-a-t-e-g-o-r-y_-t-a-b-l-e.html">CATEGORY_TABLE</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">CATEGORY_TABLE</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-p-o-i_-c-i-t-y.html">POI_CITY</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">POI_CITY</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-p-o-i_-c-o-u-n-t-r-y.html">POI_COUNTRY</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">POI_COUNTRY</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-p-o-i_-e-l-e-v-a-t-i-o-n.html">POI_ELEVATION</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">POI_ELEVATION</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-p-o-i_-f-a-x-n-u-m-b-e-r.html">POI_FAXNUMBER</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">POI_FAXNUMBER</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-p-o-i_-i-c-o-n-n-a-m-e.html">POI_ICONNAME</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">POI_ICONNAME</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-p-o-i_-i-d.html">POI_ID</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">POI_ID</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-p-o-i_-i-s_-w-o-r-t-h_-s-e-e-i-n-g.html">POI_IS_WORTH_SEEING</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">POI_IS_WORTH_SEEING</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-p-o-i_-l-a-t-i-t-u-d-e.html">POI_LATITUDE</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">POI_LATITUDE</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-p-o-i_-l-o-n-g-i-t-u-d-e.html">POI_LONGITUDE</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">POI_LONGITUDE</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-p-o-i_-n-a-m-e.html">POI_NAME</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">POI_NAME</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-p-o-i_-p-h-o-n-e-n-u-m-b-e-r.html">POI_PHONENUMBER</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">POI_PHONENUMBER</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-p-o-i_-p-o-s-t-c-o-d-e.html">POI_POSTCODE</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">POI_POSTCODE</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-p-o-i_-r-o-o-t_-c-a-t-e-g-o-r-y.html">POI_ROOT_CATEGORY</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">POI_ROOT_CATEGORY</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-p-o-i_-s-h-o-r-t_-d-e-s-c-r-i-p-t-i-o-n.html">POI_SHORT_DESCRIPTION</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">POI_SHORT_DESCRIPTION</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-p-o-i_-s-t-r-e-e-t.html">POI_STREET</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">POI_STREET</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-p-o-i_-s-t-r-e-e-t_-n-u-m-b-e-r.html">POI_STREET_NUMBER</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">POI_STREET_NUMBER</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-p-o-i_-t-a-b-l-e.html">POI_TABLE</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">POI_TABLE</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-p-o-i_-u-n-i-q-u-e_-i-d.html">POI_UNIQUE_ID</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">POI_UNIQUE_ID</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-p-o-i_-w-e-b-s-i-t-e.html">POI_WEBSITE</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">POI_WEBSITE</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-p-o-i_-z-o-o-m.html">POI_ZOOM</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">POI_ZOOM</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-p-o-i-a-t-t-r-i-b-u-t-e_-a-t-t-r-i-b-u-t-e_-i-d.html">POIATTRIBUTE_ATTRIBUTE_ID</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">POIATTRIBUTE_ATTRIBUTE_ID</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-p-o-i-a-t-t-r-i-b-u-t-e_-i-d.html">POIATTRIBUTE_ID</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">POIATTRIBUTE_ID</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-p-o-i-a-t-t-r-i-b-u-t-e_-p-o-i_-i-d.html">POIATTRIBUTE_POI_ID</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">POIATTRIBUTE_POI_ID</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-p-o-i-a-t-t-r-i-b-u-t-e_-t-a-b-l-e.html">POIATTRIBUTE_TABLE</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">POIATTRIBUTE_TABLE</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-p-o-i-c-a-t-e-g-o-r-y_-c-a-t-e-g-o-r-y_-i-d.html">POICATEGORY_CATEGORY_ID</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">POICATEGORY_CATEGORY_ID</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-p-o-i-c-a-t-e-g-o-r-y_-i-d.html">POICATEGORY_ID</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">POICATEGORY_ID</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-p-o-i-c-a-t-e-g-o-r-y_-p-o-i_-i-d.html">POICATEGORY_POI_ID</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">POICATEGORY_POI_ID</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-p-o-i-c-a-t-e-g-o-r-y_-t-a-b-l-e.html">POICATEGORY_TABLE</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">POICATEGORY_TABLE</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

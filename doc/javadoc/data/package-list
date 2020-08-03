@@ -1,0 +1,13 @@
+$dokka.format:html
+$dokka.linkExtension:html
+
+kinf.koch.masterthesis
+kinf.koch.masterthesis.dagger
+kinf.koch.masterthesis.extensions
+kinf.koch.masterthesis.model
+kinf.koch.masterthesis.model.pois
+kinf.koch.masterthesis.tsp
+kinf.koch.masterthesis.ui
+kinf.koch.masterthesis.ui.main
+kinf.koch.masterthesis.ui.utils
+kinf.koch.masterthesis.utils

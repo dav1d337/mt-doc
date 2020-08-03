@@ -1,0 +1,66 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PoiStore - data</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">data</a>&nbsp;/&nbsp;<a href="../index.html">kinf.koch.masterthesis.model.pois</a>&nbsp;/&nbsp;<a href="./index.html">PoiStore</a><br/>
+<br/>
+<h1>PoiStore</h1>
+(JVM) <code><span class="identifier">@MapScope</span> <span class="keyword">class </span><span class="identifier">PoiStore</span></code> <a href="https://github.com/cy6erGn0m/vertx3-lang-kotlin/blob/master/src/main/kotlin/app/src/main/java/kinf/koch/masterthesis/model/pois/PoiStore.kt#L24">(source)</a>
+<p>This class represents the central point for the model layer.
+It allows the caller to get either MMV or OSM Pois as a List of <a href="../-poi/index.html">Poi</a> wrapped in an Observable</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>This class represents the central point for the model layer.
+It allows the caller to get either MMV or OSM Pois as a List of <a href="../-poi/index.html">Poi</a> wrapped in an Observable</p>
+<code><span class="identifier">PoiStore</span><span class="symbol">(</span><span class="identifier" id="kinf.koch.masterthesis.model.pois.PoiStore$<init>(kinf.koch.masterthesis.model.pois.PoiRepository, kinf.koch.masterthesis.utils.Scheduler)/poiRepo">poiRepo</span><span class="symbol">:</span>&nbsp;<a href="../-poi-repository/index.html"><span class="identifier">PoiRepository</span></a><span class="symbol">, </span><span class="identifier" id="kinf.koch.masterthesis.model.pois.PoiStore$<init>(kinf.koch.masterthesis.model.pois.PoiRepository, kinf.koch.masterthesis.utils.Scheduler)/scheduler">scheduler</span><span class="symbol">:</span>&nbsp;<a href="../../kinf.koch.masterthesis.utils/-scheduler/index.html"><span class="identifier">Scheduler</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+(JVM) 
+<h4><a href="pois.html">pois</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">pois</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-poi/index.html"><span class="identifier">Poi</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+(JVM) 
+<h4><a href="fetch-mmv-pois.html">fetchMmvPois</a></h4>
+</td>
+<td>
+<p>Feeds the subject with POIs from the local <a href="../-poi-repository/index.html">PoiRepository</a></p>
+<code><span class="keyword">fun </span><span class="identifier">fetchMmvPois</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="fetch-overpass-pois.html">fetchOverpassPois</a></h4>
+</td>
+<td>
+<p>This method uses the <a href="#">OverpassServiceProvider</a> to get the Pois with respect to the location of the device and given constraints.</p>
+<code><span class="keyword">fun </span><span class="identifier">fetchOverpassPois</span><span class="symbol">(</span><span class="identifier" id="kinf.koch.masterthesis.model.pois.PoiStore$fetchOverpassPois(, kotlin.collections.List((kotlin.String)))/userLocation">userLocation</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">, </span><span class="identifier" id="kinf.koch.masterthesis.model.pois.PoiStore$fetchOverpassPois(, kotlin.collections.List((kotlin.String)))/constraints">constraints</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-poi/index.html"><span class="identifier">Poi</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

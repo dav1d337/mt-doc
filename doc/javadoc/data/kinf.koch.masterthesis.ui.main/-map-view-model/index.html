@@ -1,0 +1,140 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>MapViewModel - data</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">data</a>&nbsp;/&nbsp;<a href="../index.html">kinf.koch.masterthesis.ui.main</a>&nbsp;/&nbsp;<a href="./index.html">MapViewModel</a><br/>
+<br/>
+<h1>MapViewModel</h1>
+(JVM) <code><span class="keyword">class </span><span class="identifier">MapViewModel</span></code> <a href="https://github.com/cy6erGn0m/vertx3-lang-kotlin/blob/master/src/main/kotlin/app/src/main/java/kinf/koch/masterthesis/ui/main/MapViewModel.kt#L42">(source)</a>
+<p><a href="#">ViewModel</a> for the <a href="../-map-fragment/index.html">MapFragment</a>.
+All calculations regarding the route generation take place here.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p><a href="#">ViewModel</a> for the <a href="../-map-fragment/index.html">MapFragment</a>.
+All calculations regarding the route generation take place here.</p>
+<code><span class="identifier">MapViewModel</span><span class="symbol">(</span><span class="identifier" id="kinf.koch.masterthesis.ui.main.MapViewModel$<init>(kinf.koch.masterthesis.utils.LocationHelper, kinf.koch.masterthesis.utils.NetworkRequestQueueImpl, kinf.koch.masterthesis.tsp.BranchAndBoundTSPSolver, kinf.koch.masterthesis.utils.Scheduler, kinf.koch.masterthesis.model.pois.PoiStore)/locationHelper">locationHelper</span><span class="symbol">:</span>&nbsp;<a href="../../kinf.koch.masterthesis.utils/-location-helper/index.html"><span class="identifier">LocationHelper</span></a><span class="symbol">, </span><span class="identifier" id="kinf.koch.masterthesis.ui.main.MapViewModel$<init>(kinf.koch.masterthesis.utils.LocationHelper, kinf.koch.masterthesis.utils.NetworkRequestQueueImpl, kinf.koch.masterthesis.tsp.BranchAndBoundTSPSolver, kinf.koch.masterthesis.utils.Scheduler, kinf.koch.masterthesis.model.pois.PoiStore)/networkRequestQueueImpl">networkRequestQueueImpl</span><span class="symbol">:</span>&nbsp;<a href="../../kinf.koch.masterthesis.utils/-network-request-queue-impl/index.html"><span class="identifier">NetworkRequestQueueImpl</span></a><span class="symbol">, </span><span class="identifier" id="kinf.koch.masterthesis.ui.main.MapViewModel$<init>(kinf.koch.masterthesis.utils.LocationHelper, kinf.koch.masterthesis.utils.NetworkRequestQueueImpl, kinf.koch.masterthesis.tsp.BranchAndBoundTSPSolver, kinf.koch.masterthesis.utils.Scheduler, kinf.koch.masterthesis.model.pois.PoiStore)/branchAndBoundTSPSolver">branchAndBoundTSPSolver</span><span class="symbol">:</span>&nbsp;<a href="../../kinf.koch.masterthesis.tsp/-branch-and-bound-t-s-p-solver/index.html"><span class="identifier">BranchAndBoundTSPSolver</span></a><span class="symbol">, </span><span class="identifier" id="kinf.koch.masterthesis.ui.main.MapViewModel$<init>(kinf.koch.masterthesis.utils.LocationHelper, kinf.koch.masterthesis.utils.NetworkRequestQueueImpl, kinf.koch.masterthesis.tsp.BranchAndBoundTSPSolver, kinf.koch.masterthesis.utils.Scheduler, kinf.koch.masterthesis.model.pois.PoiStore)/scheduler">scheduler</span><span class="symbol">:</span>&nbsp;<a href="../../kinf.koch.masterthesis.utils/-scheduler/index.html"><span class="identifier">Scheduler</span></a><span class="symbol">, </span><span class="identifier" id="kinf.koch.masterthesis.ui.main.MapViewModel$<init>(kinf.koch.masterthesis.utils.LocationHelper, kinf.koch.masterthesis.utils.NetworkRequestQueueImpl, kinf.koch.masterthesis.tsp.BranchAndBoundTSPSolver, kinf.koch.masterthesis.utils.Scheduler, kinf.koch.masterthesis.model.pois.PoiStore)/poiStore">poiStore</span><span class="symbol">:</span>&nbsp;<a href="../../kinf.koch.masterthesis.model.pois/-poi-store/index.html"><span class="identifier">PoiStore</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+(JVM) 
+<h4><a href="error.html">error</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">error</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Error.html"><span class="identifier">Error</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="filtered-pois.html">filteredPois</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">filteredPois</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../kinf.koch.masterthesis.model.pois/-poi/index.html"><span class="identifier">Poi</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="pois-n-f-e.html">poisNFE</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">poisNFE</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../kinf.koch.masterthesis.model.pois/-poi/index.html"><span class="identifier">Poi</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="route.html">route</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">route</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html"><span class="identifier">IntArray</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="user-location.html">userLocation</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">userLocation</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">&lt;</span><span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="waypoints.html">waypoints</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">waypoints</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+(JVM) 
+<h4><a href="add-osrm-request-to-queue.html">addOsrmRequestToQueue</a></h4>
+</td>
+<td>
+<p>Adds a routing request to for ProjectOSRM to the <a href="../../kinf.koch.masterthesis.utils/-network-request-queue-impl/index.html">NetworkRequestQueueImpl</a>
+Only allows car routing</p>
+<code><span class="keyword">fun </span><span class="identifier">addOsrmRequestToQueue</span><span class="symbol">(</span><span class="identifier" id="kinf.koch.masterthesis.ui.main.MapViewModel$addOsrmRequestToQueue(kotlin.String)/locationsAsString">locationsAsString</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="create-location-request.html">createLocationRequest</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">createLocationRequest</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="create-route.html">createRoute</a></h4>
+</td>
+<td>
+<p>Entry point for generating a touristic, individual route.
+Sets the given user input as properties.</p>
+<code><span class="keyword">fun </span><span class="identifier">createRoute</span><span class="symbol">(</span><span class="identifier" id="kinf.koch.masterthesis.ui.main.MapViewModel$createRoute(kotlin.String, kinf.koch.masterthesis.model.Constraints, kotlin.String, kotlin.String, kotlin.String)/dataset">dataset</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="kinf.koch.masterthesis.ui.main.MapViewModel$createRoute(kotlin.String, kinf.koch.masterthesis.model.Constraints, kotlin.String, kotlin.String, kotlin.String)/constraints">constraints</span><span class="symbol">:</span>&nbsp;<a href="../../kinf.koch.masterthesis.model/-constraints/index.html"><span class="identifier">Constraints</span></a><span class="symbol">, </span><span class="identifier" id="kinf.koch.masterthesis.ui.main.MapViewModel$createRoute(kotlin.String, kinf.koch.masterthesis.model.Constraints, kotlin.String, kotlin.String, kotlin.String)/algorithm">algorithm</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="kinf.koch.masterthesis.ui.main.MapViewModel$createRoute(kotlin.String, kinf.koch.masterthesis.model.Constraints, kotlin.String, kotlin.String, kotlin.String)/drivingProfile">drivingProfile</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="kinf.koch.masterthesis.ui.main.MapViewModel$createRoute(kotlin.String, kinf.koch.masterthesis.model.Constraints, kotlin.String, kotlin.String, kotlin.String)/apiProvider">apiProvider</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="on-cleared.html">onCleared</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCleared</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="remove-location-updates.html">removeLocationUpdates</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">removeLocationUpdates</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="request-location-request.html">requestLocationRequest</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">requestLocationRequest</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,90 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>BaseFragment - data</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">data</a>&nbsp;/&nbsp;<a href="../index.html">kinf.koch.masterthesis.ui.utils</a>&nbsp;/&nbsp;<a href="./index.html">BaseFragment</a><br/>
+<br/>
+<h1>BaseFragment</h1>
+(JVM) <code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">BaseFragment</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code> <a href="https://github.com/cy6erGn0m/vertx3-lang-kotlin/blob/master/src/main/kotlin/app/src/main/java/kinf/koch/masterthesis/ui/utils/BaseFragment.kt#L15">(source)</a>
+<p>Base class for all fragments which are using a <a href="#">ViewModel</a>
+The ViewModel will be safely initiated and an open inject() method for Dagger will always called in the onCreate() method.</p>
+<h3>Parameters</h3>
+<p><a name="T"></a>
+<code>T</code> - Corresponding <a href="#">ViewModel</a></p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Base class for all fragments which are using a <a href="#">ViewModel</a>
+The ViewModel will be safely initiated and an open inject() method for Dagger will always called in the onCreate() method.</p>
+<code><span class="identifier">BaseFragment</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+(JVM) 
+<h4><a href="view-model.html">viewModel</a></h4>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">viewModel</span><span class="symbol">: </span><span class="identifier">T</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+(JVM) 
+<h4><a href="inject.html">inject</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">inject</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="on-activity-created.html">onActivityCreated</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onActivityCreated</span><span class="symbol">(</span><span class="identifier" id="kinf.koch.masterthesis.ui.utils.BaseFragment$onActivityCreated()/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="on-create.html">onCreate</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onCreate</span><span class="symbol">(</span><span class="identifier" id="kinf.koch.masterthesis.ui.utils.BaseFragment$onCreate()/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+(JVM) 
+<h4><a href="../../kinf.koch.masterthesis.ui.main/-map-fragment/index.html">MapFragment</a></h4>
+</td>
+<td>
+<p>This class represents the main view of the application.
+It holds all information regarding the visible part of the map and the route generation dialog.</p>
+<code><span class="keyword">class </span><span class="identifier">MapFragment</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">BaseFragment</span></a><span class="symbol">&lt;</span><a href="../../kinf.koch.masterthesis.ui.main/-map-view-model/index.html"><span class="identifier">MapViewModel</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">MultiSpinnerListener</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
